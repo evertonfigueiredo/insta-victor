@@ -45,4 +45,4 @@ app.get("/",function(req, res) {
 
 // ------------ socket io ------------ //
 
-app.listen(5000, console.log("server rodando na porta 5000"));
+app.listen(5000 || 80, console.log("server rodando na porta 5000"));
