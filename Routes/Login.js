@@ -194,4 +194,8 @@ loginRouter.get("/user", async (req, res) => {
   }
 });
 
+loginRouter.get("/", (req, res) => {
+  return "hello word";
+});
+
 export default loginRouter;
