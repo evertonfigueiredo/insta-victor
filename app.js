@@ -35,9 +35,14 @@ app.get("/test", commentaryRouter);
 
 // ------------ rotas de teste ------------ //
 
-app.get("/", loginRouter);
+// app.get("/", loginRouter);
+app.get("/",function(req, res) {
+    console.log("Chegou no get");
+    return res.json("Teste");
+});
+
 app.delete("/delete/:id", loginRouter);
 
 // ------------ socket io ------------ //
 
-app.listen(3010, console.log("server rodando na porta 3010"));
+app.listen(5000, console.log("server rodando na porta 5000"));
