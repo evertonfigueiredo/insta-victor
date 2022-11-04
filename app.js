@@ -44,5 +44,4 @@ app.get("/",function(req, res) {
 // app.delete("/delete/:id", loginRouter);
 
 // ------------ socket io ------------ //
-
-app.listen(5000 || 80, console.log("server rodando na porta 5000"));
+app.listen(process.env.PORT || 5000, console.log("server rodando na porta " + process.env.PORT || 5000));
